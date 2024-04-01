@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/Untitled design.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- SIDEBAR CONTAINER -->
+    <header class="topSection">
+      <section class="filterContainer">
+        <div class="filterHead">
+          <p>Filters</p>
+          <button id="btn">
+            <img id="arrow" src="./assets/expand.png" alt="expand arrow" />
+          </button>
+        </div>
+        <div class="filterBody">
+          <div id="allText" class="all">
+            <div>
+              <img id="inbox" src="./assets/inbox.png" alt="inbox icon" />
+              <p class="content">All</p>
+            </div>
+            <p class="count">23</p>
+          </div>
+          <div class="late">
+            <div>
+              <img id="late" src="./assets/sandwatch.png" alt="late icon" />
+              <p class="content">Late</p>
+            </div>
+            <p class="count"><span>1</span></p>
+          </div>
+          <div class="today">
+            <div>
+              <img id="today" src="./assets/clock.png" alt="today icon" />
+              <p class="content">Today</p>
+            </div>
+            <p class="count"><span>0</span></p>
+          </div>
+          <div class="thisMonth">
+            <div>
+              <img
+                id="thisMonth"
+                src="./assets/calendar.png"
+                alt="this month icon"
+              />
+              <p class="content">This month</p>
+            </div>
+            <p class="count"><span>0</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projectContainer">
+        <div class="projectHead filterHead">
+          <p>Projects</p>
+          <button>
+            <img id="arrow" src="./assets/expand.png" alt="expand arrow" />
+          </button>
+        </div>
+        <div class="projectBody">
+          <div class="projectQuarantine"></div>
+          <div class="tags"></div>
+          <div class="priority">
+            <div class="mustDo"></div>
+            <div class="addPriority"></div>
+          </div>
+          <div class="status"></div>
+          <div class="toolFinder"></div>
+          <div class="tags"></div>
+          <div id="priority"></div>
+          <div id="status"></div>
+        </div>
+      </section>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="mainSection">
+      <section class="navContainer">
+        <div class="navContent">
+          <h1 class="projectTitle">Project Quarantine</h1>
+          <p class="projectBody">
+            <span id="pendingTasks">0</span> pending tasks
+          </p>
+        </div>
+      </section>
+      <section class="taskContainer">
+        <div class="doContainer">
+          <div class="taskHeader">
+            <h1 class="taskType">Do</h1>
+            <div class="counter">
+              <p class="doCount taskCount">0</p>
+              <button>
+                <img class="dot" src="./assets/dot.png" alt="toggle button" />
+              </button>
+            </div>
+          </div>
+
+          <!-- FIRST -->
+          <div class="taskMain taskMainDo">
+            <!-- <div class="taskBody doTaskBody">
+              <div class="taskText">
+                <input type="checkbox" name="list" />
+                <p class="doTaskList">
+                  Create a project, call it "Bucket List" and enter things I
+                  want to do once things get better
+                </p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+
+            <!-- SECOND -->
+            <!-- <div class="taskBody doTaskBody">
+              <div class="taskText">
+                <input type="checkbox" name="list" />
+                <p class="doTaskList">
+                  Figure out what Rapunzel did while she was quarantined in a
+                  castle 
+                </p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+
+            <!-- THIRD -->
+            <!-- <div class="taskBody doTaskBody">
+              <div class="taskText">
+                <div class="checkbox">
+                  <input type="checkbox" name="list" />
+                  <span class="checkmark"></span>
+                </div>
+                <p class="doTaskList">Giveaway your old clothes to charity</p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+
+            <!-- FOURTH -->
+            <!-- <div class="taskBody doTaskBody">
+              <div class="taskText">
+                <input type="checkbox" name="list" />
+                <p class="doTaskList">Read a book </p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+
+            <!-- FIFTH -->
+            <!-- <div class="taskBody doTaskBody">
+              <div class="taskText">
+                <div class="checkbox">
+                  <input type="checkbox" name="list" />
+                  <span class="checkmark"></span>
+                </div>
+                <p class="doTaskList">Try meditating once</p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+
+            <!-- SIXTH -->
+            <!-- <div class="taskBody doTaskBody">
+              <div class="taskText">
+                <div class="checkbox">
+                  <input type="checkbox" name="list" />
+                  <span class="checkmark"></span>
+                </div>
+                <p class="doTaskList">
+                  Video call 3 friends I've not spoken to in a long time
+                </p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="doingContainer">
+          <div class="taskHeader">
+            <h1 class="taskType">Doing</h1>
+            <div class="counter">
+              <p class="doingCount taskCount">0</p>
+              <button>
+                <img class="dot" src="./assets/dot.png" alt="toggle button" />
+              </button>
+            </div>
+          </div>
+
+          <div class="taskMain taskMainDoing">
+            <!-- <div class="taskBody">
+              <div class="taskText">
+                  <input type="checkbox" name="list" />
+                  <p class="doTaskList">
+                  Create a shared project with someone dear to me consisting of
+                  tasks the both of us want to complete this year
+                  </p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div>
+
+            <div class="taskBody">
+              <div class="taskText">
+                <div class="checkbox">
+                  <input type="checkbox" name="list" />
+                  <span class="checkmark"></span>
+                </div>
+                <p class="doTaskList">Get a quarantine hair cut</p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="doneContainer">
+          <div class="taskHeader">
+            <h1 class="taskType">Done</h1>
+            <div class="counter">
+              <p class="doneCount taskCount">0</p>
+              <button>
+                <img class="dot" src="./assets/dot.png" alt="toggle button" />
+              </button>
+            </div>
+          </div>
+
+          <div class="taskMain taskMainDone">
+            <!-- <div class="taskBody">
+              <div class="taskText">
+                <div class="checkbox">
+                  <input type="checkbox" name="list" />
+                  <span class="checkmark"></span>
+                </div>
+                <p class="doTaskList">Try out yoga once 🧘‍♂️🧘‍♀️</p>
+              </div>
+              <button>
+                <img class="star" src="./assets/star.png" alt="star icon" />
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+   
+  </body>
+  <script src="main.js"></script>
+</html>
